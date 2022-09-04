@@ -1,4 +1,5 @@
-console.log(2);
+import { get } from './utils'
+console.log('get', get)
 if (process.env.NODE_ENV !== 'production') {
 	console.log('Looks like we are in development mode!');
 }

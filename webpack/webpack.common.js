@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack'); // 用于访问内置插件
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 const path = require('path');
 
 /**
@@ -11,10 +12,24 @@ module.exports = {
 	target: 'web',
 	entry: {
 		main: path.resolve(__dirname, '../src/index.tsx'),
+		utils: path.resolve(__dirname, '../src/utils/index.ts'),
 	},
 	output: {
 		path: path.resolve(__dirname, '../dist'),
-		filename: '[name].[contenthash].bundle.js',
+		// filename: '[name].[contenthash].bundle.js',
+		filename: '[name].js',
+	},
+	optimization: {
+		minimize: true,
+		splitChunks: {
+			chunks: 'all',
+		},
+		runtimeChunk: 'single',
+		minimizer: [
+			new TerserPlugin({
+				exclude: /\.js(\?.*)?$/i,
+			}),
+		],
 	},
 	module: {
 		rules: [
@@ -36,9 +51,7 @@ module.exports = {
 			},
 			{
 				test: /\.jsx$/,
-				use: [
-					'babel-loader'
-				]
+				use: ['babel-loader'],
 			},
 			{
 				test: /\.tsx?$/,
@@ -57,9 +70,6 @@ module.exports = {
 			},
 		],
 	},
-	// optimization: {
-	// 	usedExports: true,
-	// },
 	plugins: [
 		new webpack.ProgressPlugin(),
 		// 插件自动生成html并挂载js文件

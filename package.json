@@ -5,6 +5,7 @@
   "author": "Kinda Hall",
   "description": "自己研发的前端框架，基于Webpack",
   "scripts": {
+    "commit": "git cz",
     "start": "webpack serve --open --config ./webpack/webpack.dev.js",
     "build": "webpack --config ./webpack/webpack.prod.js",
     "release": "standard-version",
@@ -18,6 +19,7 @@
     "@babel/core": "^7.18.13",
     "@babel/preset-env": "^7.18.10",
     "@babel/preset-react": "^7.18.6",
+    "@types/debug": "^4.1.7",
     "autoprefixer": "^10.4.8",
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
@@ -31,6 +33,7 @@
     "sass-loader": "^13.0.2",
     "source-map-loader": "^4.0.0",
     "standard-version": "^9.5.0",
+    "terser-webpack-plugin": "^5.3.6",
     "ts-loader": "^9.3.1",
     "typescript": "^4.8.2",
     "webpack": "^5.74.0",
