@@ -1,0 +1,53 @@
+{
+  "name": "kindar",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "author": "Kinda Hall",
+  "description": "自己研发的前端框架，基于Webpack",
+  "scripts": {
+    "start": "webpack serve --open --config ./webpack/webpack.dev.js",
+    "build": "webpack --config ./webpack/webpack.prod.js"
+  },
+  "repository": {
+    "url": "https://github.com/Alndaly/kinda-framework.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "autoprefixer": "^10.4.8",
+    "babel-loader": "^8.2.5",
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "json-loader": "^0.5.7",
+    "less": "^4.1.3",
+    "less-loader": "^11.0.0",
+    "postcss-loader": "^7.0.1",
+    "raw-loader": "^4.0.2",
+    "sass": "^1.54.8",
+    "sass-loader": "^13.0.2",
+    "source-map-loader": "^4.0.0",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.8.2",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.3",
+    "@mui/material": "^5.10.3",
+    "@mui/styled-engine-sc": "^5.10.3",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "clean-webpack-plugin": "^4.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.3.0",
+    "styled-components": "^5.3.5"
+  }
+}
