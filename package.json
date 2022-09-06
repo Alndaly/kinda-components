@@ -1,9 +1,9 @@
 {
-  "name": "kindar",
+  "name": "@kinda/utils",
   "version": "0.0.7",
   "main": "dist/utils.js",
   "author": "Kinda Hall",
-  "description": "自己研发的前端框架，基于Webpack",
+  "description": "自己研发的前端工具库，基于Webpack构建",
   "scripts": {
     "commit": "git cz",
     "start": "webpack serve --open --config ./webpack/webpack.dev.js",
