@@ -1,6 +1,6 @@
 {
   "name": "kindar",
-  "version": "0.0.3",
+  "version": "0.0.6",
   "main": "dist/utils.js",
   "author": "Kinda Hall",
   "description": "自己研发的前端框架，基于Webpack",
