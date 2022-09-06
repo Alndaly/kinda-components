@@ -10,8 +10,7 @@
     "build": "webpack --config ./webpack/webpack.prod.js",
     "buildNpm": "webpack --config ./webpack/webpack.npm.js",
     "release": "standard-version",
-    "push": "git push --follow-tags origin develop",
-    "publish": "npm publish"
+    "push": "git push --follow-tags origin develop"
   },
   "repository": {
     "url": "https://github.com/Alndaly/kinda-framework.git"
