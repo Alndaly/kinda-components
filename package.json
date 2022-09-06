@@ -1,19 +1,17 @@
 {
-  "name": "@kinda/utils",
-  "version": "0.0.7",
-  "main": "dist/utils.js",
+  "name": "@kinda/components",
+  "version": "0.0.1",
+  "main": "dist/components.js",
   "author": "Kinda Hall",
-  "description": "自己研发的前端工具库，基于Webpack构建",
+  "description": "自己研发的前端组件库，基于Webpack构建",
   "scripts": {
     "commit": "git cz",
-    "start": "webpack serve --open --config ./webpack/webpack.dev.js",
     "build": "webpack --config ./webpack/webpack.prod.js",
-    "buildNpm": "webpack --config ./webpack/webpack.npm.js",
     "release": "standard-version",
     "push": "git push --follow-tags origin develop"
   },
   "repository": {
-    "url": "https://github.com/Alndaly/kinda-framework.git"
+    "url": "https://github.com/Alndaly/kinda-componnets.git"
   },
   "license": "MIT",
   "devDependencies": {
