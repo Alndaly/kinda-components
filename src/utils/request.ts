@@ -5,7 +5,7 @@ import {
     joinUrl,
     objectToQs,
     stringify,
-} from '../common';
+} from '../common/index';
 import { statusCodeMsg, toJson } from './handlers';
 
 export type Params = Record<string, any>;

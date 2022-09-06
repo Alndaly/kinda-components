@@ -1,13 +1,14 @@
 {
   "name": "kindar",
   "version": "0.0.1",
-  "main": "./src/index.js",
+  "main": "dist/utils.js",
   "author": "Kinda Hall",
   "description": "自己研发的前端框架，基于Webpack",
   "scripts": {
     "commit": "git cz",
     "start": "webpack serve --open --config ./webpack/webpack.dev.js",
     "build": "webpack --config ./webpack/webpack.prod.js",
+    "buildNpm": "webpack --config ./webpack/webpack.npm.js",
     "release": "standard-version",
     "publish": "standard-version && git push --follow-tags origin develop && npm publish"
   },
@@ -51,6 +52,7 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
     "clean-webpack-plugin": "^4.0.0",
+    "global": "^4.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.3.0",
