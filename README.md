@@ -1,2 +1,3 @@
-# kinda-framework
-自己做的前端框架（基于webpack）
+# kinda-components
+
+自己封装的一些前端组件库（基于webpack和react打包）
