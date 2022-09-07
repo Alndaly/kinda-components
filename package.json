@@ -1,6 +1,6 @@
 {
   "name": "@kinda/components",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "main": "dist/components.js",
   "author": "Kinda Hall",
   "description": "自己研发的前端组件库，基于Webpack构建",
